@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation Ödev</title>
+</head>
+
+<body>
+    <form id="form1" onsubmit="event.preventDefault(); checkForm(this);" novalidate>
+        <h1>FORM VALIDATION ODEVI</h1>
+        <div class="form-body">
+            <div>
+                <label for="userName">Kullanıcı Adı :</label>
+                <input type="text" placeholder="Kullanıcı Adı" id="username" required>
+
+                <span class="error" id="usname_eror_msg"></span>
+            </div>
+            <div>
+                <label for="password">Parola :</label>
+                <input type="password" placeholder="Şifre" id="password" required minlength="8">
+                <span class="error" id="pass_eror_msg"></span>
+                <span class="error" id="pass_length_eror"></span>
+            </div>
+            <div>
+                <label for="eMail">E-Mail :</label>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <span class="error" id="email_eror_msg"></span>
+                <span class="error" id="email_valid_eror"></span>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox" required>
+                <span class="error" id="checkbox_eror_msg"></span>
+            </div>
+            <div>
+                <button type="submit" form="form1">Gönder</button>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
