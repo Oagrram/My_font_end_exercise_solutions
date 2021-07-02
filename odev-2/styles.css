@@ -1,0 +1,16 @@
+.bold {
+    font-weight: bold;
+}
+
+label,
+input {
+    display: none;
+}
+
+body {
+    background: #212121;
+    justify-content: center;
+    align-items: center;
+    font: 24px/1.4 "RobotoDraft", sans-serif;
+    color: #fff;
+}
